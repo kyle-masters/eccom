@@ -10,7 +10,7 @@ import products from '../products';
 const ProductList = () => {
     const [data, setData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [dataPerPage, setDataPerPage] = useState(24); 
+    const [dataPerPage, setDataPerPage] = useState(4); 
 
     const indexOfLastData = currentPage * dataPerPage;
     const indexOfFirstData = indexOfLastData - dataPerPage;

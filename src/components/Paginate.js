@@ -37,7 +37,7 @@ const Paginate = ({ onPageChange, dataPerPage, totalData, currentPage, siblingCo
 
             {paginateRange.map(pageNumber => {
 
-                if (pageNumber === DOTS) {
+                if (pageNumber === '...') {
                     return <PageDots>&#8230;</PageDots>
                 }
 
