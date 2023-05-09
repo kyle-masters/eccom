@@ -180,14 +180,21 @@ export const PageNumItem = styled.li`
 export const ProductCarouselWrapper = styled.div`
     width: 600px;
     max-width: 100%;
+    position: relative;
 `
 
 export const ProductCarouselPrev = styled(FaChevronCircleLeft)`
-
+    position: absolute;
+    left: 0;
+    top: calc(50% - .5em);
+    font-size: 2em;
 `
 
 export const ProductCarouselNext = styled(FaChevronCircleRight)`
-
+    position: absolute;
+    right: 0;
+    top: calc(50% - .5em);
+    font-size: 2em;
 `
 
 export const ProductCarouselImageContainer = styled.div`
@@ -197,6 +204,7 @@ export const ProductCarouselImageContainer = styled.div`
 export const ProductCarouselImage = styled.img`
     object-fit: crop;
     width: 100%;
+    user-select: none;
 `
 
 export const ThumbnailContainer = styled.div`
@@ -214,9 +222,10 @@ export const ThumbnailSliderContainer = styled.div`
     flex-wrap: nowrap;
     justify-content: start;
     align-items: start;
-    right: 26%;
-    left: -26%;
-    transition: 0.4s;
+    left: 0;
+    right: 0;
+    transition: 0.4s
+    
 `
 
 export const ThumbnailImage = styled.img`
@@ -226,19 +235,33 @@ export const ThumbnailImage = styled.img`
     object-fit: cover;
     min-width: 25%;
     max-width: 25%;
+    user-select: none;
     
 `
 
-export const ThumbnailPrev = styled(FaChevronCircleLeft)`
+export const ThumbnailArrowContainer = styled.div`
     width: 5%;
+    position: relative;
+`
+
+export const ThumbnailPrev = styled(FaChevronCircleLeft)`
+    width: 100%;
+    position: absolute;
+    top: 40%;
 `
 
 export const ThumbnailNext = styled(FaChevronCircleRight)`
-    width: 5%;
+    width: 100%;
+    position: absolute;
+    top: 40%;
 `
 
 export const SliderContainer = styled.div`
     width: 100%;
     display: flex;
     aspect-ratio: 5;
+`
+
+export const ProductWrapper = styled.div`
+    position: relative;
 `
